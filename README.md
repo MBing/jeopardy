@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Jeopardy
+
+App made in React, fully tested with [Enzyme](https://airbnb.io/enzyme/) and a sip of [SinonJS](https://sinonjs.org/).
+Uses the API of  [jservice.io](http://jservice.io/api/)
 
 ## Available Scripts
 
