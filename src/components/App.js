@@ -4,7 +4,7 @@ import { pickCategory, setCategories } from '../actions';
 import { Link } from 'react-router-dom';
 import { BASE_URL } from '../api';
 
-class AppContainer extends Component {
+export class AppContainer extends Component {
     componentDidMount() {
         if (!Boolean(this.props.categories.length)) {
             fetch(BASE_URL + 'categories?count=20')
@@ -16,7 +16,7 @@ class AppContainer extends Component {
     render() {
         return (
             <div>
-                <h2>Jeopardy</h2>
+                <h2>Jeopardy!</h2>
                 {this.props.categories.map(category => {
                     return (
                         <div key={category.id}>

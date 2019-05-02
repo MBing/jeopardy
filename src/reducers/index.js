@@ -1,7 +1,7 @@
 import { SET_CATEGORIES, PICK_CATEGORY } from '../actions';
 import { combineReducers } from 'redux';
 
-const categories = (state = [], action) => {
+export const categories = (state = [], action) => {
     switch (action.type) {
         case SET_CATEGORIES:
             return action.categories;
@@ -10,7 +10,7 @@ const categories = (state = [], action) => {
     }
 };
 
-const category = (state = {}, action) => {
+export const category = (state = {}, action) => {
     switch (action.type) {
         case PICK_CATEGORY:
             return action.category;

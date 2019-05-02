@@ -34,18 +34,22 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/components/**/*.{js,jsx}"
+      "src/**/*.{js,jsx}"
     ],
     "coverageThreshold": {
       "global": {
-        "statements": 0,
-        "branches": 0,
-        "functions": 0,
-        "lines": 0
+        "statements": 75,
+        "branches": 80,
+        "functions": 50,
+        "lines": 80
       }
     }
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "prettier": "^1.17.0",
+    "react-test-renderer": "^16.8.6",
+    "sinon": "^7.3.2"
   }
 }
